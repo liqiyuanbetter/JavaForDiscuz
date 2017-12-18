@@ -13,6 +13,11 @@ import com.oldbutcher.javafordiscuz.utils.AppUtil;
 import com.oldbutcher.javafordiscuz.utils.DBUtil;
 import com.oldbutcher.javafordiscuz.utils.DisUtil;
 
+/**
+ * 轻应用入口
+ * @author cailun
+ *
+ */
 @WebServlet(urlPatterns = {"/index"})
 public class IndexServlet extends HttpServlet {
 
