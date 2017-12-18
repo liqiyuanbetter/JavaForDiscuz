@@ -5,17 +5,6 @@ import java.util.LinkedList;
 import com.fivestars.interfaces.bbs.client.Client;
 import com.fivestars.interfaces.bbs.util.XMLHelper;
 
-/**
- * ================================================
- * Discuz! Ucenter API for JAVA
- * ================================================
- * 测试类
- * 示例：本类实现在如何实现在登入/登出，以及注册。
- * 
- * 更多信息：http://code.google.com/p/discuz-ucenter-api-for-java/
- * 作者：梁平 (no_ten@163.com) 
- * 创建时间：2009-2-20
- */
 public class Test {
 
 	/**
