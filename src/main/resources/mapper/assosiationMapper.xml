@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="assosiation">
+
+	<!-- 根据电话号码查询数据 -->
+	<select id="getByMobile" parameterType="string"
+		resultType="com.oldbutcher.javafordiscuz.qingtui.entity.Assosiation">
+		select * from qingtuiassosiation where mobile = #{mobile}	
+	</select>
+	
+	<!-- 根据电话号码查询用户id -->
+	<select id="getIdByMobile" parameterType="string" resultType="int">
+		select id from qingtuiassosiation where mobile = #{mobile} 
+	</select>
+	
+	<!-- 根据用户id得到用户登录名 -->
+	<select id="getUsernameById" parameterType="integer" resultType="string">
+		select username from pre_ucenter_members where uid = #{id} 
+	</select>
+	
+	<!-- 根据discuz用户名得到用户id -->
+	<select id="getIdByUserName" parameterType="string" resultType="integer">
+		select uid from pre_ucenter_members where username = #{name}
+	</select>
+	
+	<!-- 向关联表中插入数据 -->
+	<insert id="addAssosiation" parameterType="com.oldbutcher.javafordiscuz.qingtui.entity.Assosiation">
+		insert into qingtuiassosiation(mobile, id) values(#{mobile}, #{id})
+	</insert>
+	
+</mapper>
