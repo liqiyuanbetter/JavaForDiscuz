@@ -2,6 +2,9 @@ package com.oldbutcher.javafordiscuz.qingtui.entity;
 
 import java.util.Arrays;
 
+/**
+ * author liqiyuan
+ */
 public class UserInfo {
 	// 姓名
 	private String name;
